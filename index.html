@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>cursos</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h3> <main> matricula </main> </h3>
+			</div>
+			<div class="form-container">
+				<div class="form-header">
+					<p>Cadastro</p>
+				</div>
+				<div class="form-body">
+					<h1 class="form-title">cursos disponiveis!</h1>
+					<p> informe os dados a baixo </p>
+					<form>
+						<div class="box-input">
+							<label for="title">
+								Nome: 
+								<span class="required-field">*</span>
+							</label>
+							<input type="text" name="title" id="title" class="block" 
+								placeholder="nome"
+								minlength="1" maxlength="30" required>
+						</div>
+						<div class="box-input">
+							cursos:
+								<span class="required-field">*</span>
+							</label>
+							<input type="text" name="title" id="title" class="block" 
+								placeholder="cursos"
+								minlength="1" maxlength="30" required>
+						</div>
+						<div class="box-input">
+							<label for="description">Descrição: 
+								<span class="required-field">*</span>
+							</label>
+							<textarea
+								id="description" 
+								name="description" 
+								class="block"
+								cols="30"
+								rows="10"
+								required
+								placeholder="Descrição" 	
+							>
+							</textarea>
+						</div>
+						<div class="box-input">
+							<label for="unique_owner">Tem alguma devida ? 
+								<span class="required-field">*</span>
+							</label>
+							<select id="unique_owner" name="unique_owner" required>
+								<option value="">Selecione...</option>
+								<option value="1">Sim</option>
+								<option value="0">Não</option>
+							</select>
+						</div>
+						<div class="box-input">
+							<label for="brand">
+								Rg: 
+								<span class="required-field">*</span>
+							</label>
+							<input type="text" name="brand" id="brand" class="block" 
+								placeholder="Digite RG" required>
+						</div>
+						<div class="box-input">
+							<label for="model">
+								CPF: 
+								<span class="required-field">*</span>
+							</label>
+							<input type="text" name="model" id="model" class="block" 
+								placeholder="Digite O CPF	" required>
+						</div>
+						<div class="box-input">
+							<label for="mileage">
+								ENDEREÇO: 
+								<span class="required-field">*</span>
+							</label>
+							<input type="number" name="mileage" id="mileage" class="block" 
+							required>
+						</div>
+						<div class="box-input">
+							<label for="purchase_date">
+								data de nascimento : 
+								<span class="required-field">*</span>
+							</label>
+							<input 
+								type="date" 
+								name="purchase_date" 
+								id="purchase_date" 
+								class="block" 
+								required
+							>
+						</div>
+						<div class="box-input">
+							<p>sexo: <span class="required-field">*</span></p>
+							<input type="radio" id="manual" name="gear">
+							<label for="manual">masculino</label>
+							<input type="radio" id="auto" name="gear">
+							<label for="auto">feminino</label>
+							<input type="radio" id="auto" name="gear">
+							<label for="auto">outros </label>
+						</div>
+						<div class="optional_box">
+							<p>Opcionais:</p>
+							<ul class="optional_list">
+								<li>
+									<input type="checkbox" id="airbag" name="optional[]" value="airbag">
+									<label for="airbag">humanas</label>
+								</li>
+								<li>
+									<input type="checkbox" id="alarm" name="optional[]" value="alarm">
+									<label for="alarm">exatas</label>
+								</li>
+								<li>
+									<input type="checkbox" id="ac" name="optional[]" value="ac">
+									<label for="ac">TI</label>
+								</li>
+								<li>
+									<input type="checkbox" id="eletric_lock" name="optional[]" value="eletric_lock">
+									<label for="eletric_lock"> educação</label>
+								</li>
+							</ul>
+						</div>
+						<div class="optional_box">
+							<ul class="optional_list">
+								<li>
+									<input type="checkbox" id="eletric_window" name="optional[]" value="eletric_window">
+									<label for="eletric_window">musica</label>
+								</li>
+								<li>
+									<input type="checkbox" id="speakers" name="optional[]" value="speakers">
+									<label for="speakers"> audio e video</label>
+								</li>
+								<li>
+									<input type="checkbox" id="reverse_camera" name="optional[]" value="reverse_camera">
+									<label for="reverse_camera"> engenharia </label>
+								</li>
+								<li>
+									<input type="checkbox" id="leather_seat" name="optional[]" value="leather_seat">
+									<label for="leather_seat">medicina </label>
+								</li>
+							</ul>
+						</div>
+						<div class="box-input">
+							<p>Envie os documentos pessoais : <span class="required-field">*</span></p>
+							<input 
+								type="file" 
+								multiple accept="image/png, image/jpeg" 
+								id="images"
+								name="images"
+								required
+							>
+						</div>
+						<input type="submit" class="btn-submit" value="Cadastrar">
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
